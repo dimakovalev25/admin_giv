@@ -1,0 +1,35 @@
+### User reviews get local
+// @no-log
+// @no-cookie-jar
+GET http://api.givgive.loc/v1/reviews
+Content-Type: application/json
+Accept: application/json
+Givgive-Token: $2y$10$N7Gw1OoWMRKHbdmLIuaweeGCpWMY0R8eflXPzR.h/bWqkke6SfnHy
+
+### User reviews get dev
+// @no-log
+// @no-cookie-jar
+GET https://api.givgive.com/v1/reviews
+Content-Type: application/json
+Accept: application/json
+Givgive-Token: $2y$10$N7Gw1OoWMRKHbdmLIuaweeGCpWMY0R8eflXPzR.h/bWqkke6SfnHy
+
+### User reviews get local by id
+// @no-log
+// @no-cookie-jar
+GET http://api.givgive.loc/v1/reviews/63da1d41ab9f3717092d2e82
+Content-Type: application/json
+Accept: application/json
+Givgive-Token: $2y$10$N7Gw1OoWMRKHbdmLIuaweeGCpWMY0R8eflXPzR.h/bWqkke6SfnHy
+
+### User reviews get dev by id
+// @no-log
+// @no-cookie-jar
+GET https://api.givgive.com/v1/reviews/63da1d41ab9f3717092d2e82
+Content-Type: application/json
+Accept: application/json
+Givgive-Token: $2y$10$N7Gw1OoWMRKHbdmLIuaweeGCpWMY0R8eflXPzR.h/bWqkke6SfnHy
+
+
+
+
