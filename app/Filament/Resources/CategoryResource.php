@@ -24,7 +24,12 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('title'),
+                Forms\Components\TextInput::make('shortname'),
+                Forms\Components\TextInput::make('bonus_amount')->default(5),
+//                Forms\Components\Select::make('parent_id')
+//                    ->options(Category::all()->pluck('shortname', '_id'))
+//                    ->searchable(),
             ]);
     }
 
