@@ -1,5 +1,6 @@
-<?php namespace App;
+<?php
 
+namespace App\Models;
 use DateTimeInterface;
 use MongoDB\Laravel\Relations\BelongsTo;
 use MongoDB\Laravel\Eloquent\Model as Eloquent;

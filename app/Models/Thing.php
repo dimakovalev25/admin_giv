@@ -1,6 +1,7 @@
 <?php
 
-namespace App;
+
+namespace App\Models;
 
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Collection;
