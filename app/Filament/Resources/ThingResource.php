@@ -52,13 +52,14 @@ class ThingResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('_id')->copyable(),
                 TextColumn::make('title')
                     ->description(fn (Thing $record) => $record->description)->sortable()->searchable(),
                 Tables\Columns\ImageColumn::make('images')->stacked()->width(80)->height(130),
                 TextColumn::make('purpose')->color('primary'),
-                TextColumn::make('realCost')->color('primary'),
+/*                TextColumn::make('realCost')->color('primary'),*/
                 TextColumn::make('category.shortname'),
+                TextColumn::make('category.cat1'),
+                TextColumn::make('user.email')->copyable()->sortable()->searchable(),
 
             ])
             ->filters([

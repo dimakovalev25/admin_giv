@@ -83,7 +83,7 @@ class Thing extends Eloquent
 
     public function category(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class, 'categoryId');
     }
 
     public function likes(): HasMany
