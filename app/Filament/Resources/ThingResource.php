@@ -15,7 +15,7 @@ class ThingResource extends Resource
 {
     protected static ?string $model = Thing::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-inbox-stack';
 
 //    protected static ?string $navigationGroup = 'Things';
 
