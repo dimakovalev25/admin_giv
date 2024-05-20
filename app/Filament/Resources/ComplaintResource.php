@@ -48,6 +48,7 @@ class ComplaintResource extends Resource
 
 
                 TextColumn::make('type')->sortable()->searchable(),
+                TextColumn::make('reason')->sortable()->searchable(),
 
                 TextColumn::make('targetUser.email')->copyable()->sortable()->searchable(),
                 TextColumn::make('targetThing.title')->copyable()->sortable()->searchable(),
