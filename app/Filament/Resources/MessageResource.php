@@ -16,7 +16,7 @@ class MessageResource extends Resource
 {
     protected static ?string $model = Message::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-exclamation-circle';
+    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
 
     protected static ?string $navigationGroup = 'Complaints';
 
