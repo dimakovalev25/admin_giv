@@ -188,4 +188,6 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'adminId' => env('ADMIN_ID', '646719a815b2616056341667'),
+
 ];

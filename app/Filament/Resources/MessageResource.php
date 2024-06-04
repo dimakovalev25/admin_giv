@@ -11,6 +11,7 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Config;
 
 class MessageResource extends Resource
 {
@@ -66,7 +67,7 @@ class MessageResource extends Resource
     public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
     {
         return parent::getEloquentQuery()
-            ->where('receiver_id', '646719a815b2616056341667');
+            ->where('receiver_id', Config::get('app.adminId'));
     }
 
     public static function getPages(): array
