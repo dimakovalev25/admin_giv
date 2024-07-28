@@ -28,6 +28,7 @@ class MessageResource extends Resource
             ->schema([
                 TextInput::make('message'),
                 TextInput::make('receiver_id'),
+                TextInput::make('sender_id'),
 
             ]);
     }
@@ -38,6 +39,7 @@ class MessageResource extends Resource
             ->columns([
                 TextColumn::make('message')->copyable()->sortable()->searchable(),
                 TextColumn::make('sender.email')->copyable()->sortable()->searchable(),
+                TextColumn::make('sender._id')->copyable()->sortable()->searchable(),
                 TextColumn::make('receiver.email')->copyable()->sortable()->searchable(),
 //                TextColumn::make('order._id')->copyable()->sortable()->searchable(),
 

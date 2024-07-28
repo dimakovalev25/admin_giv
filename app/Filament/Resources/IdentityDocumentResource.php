@@ -35,7 +35,7 @@ class IdentityDocumentResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('_id')->copyable()->sortable()->searchable(),
+//                TextColumn::make('_id')->copyable()->sortable()->searchable(),
                 TextColumn::make('status')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
