@@ -23,4 +23,9 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::get('/test', function (){
+    $user = \App\Models\User::find('663aea02073390f13c063f52');
+    return $user->email;
+});
+
 require __DIR__.'/auth.php';
